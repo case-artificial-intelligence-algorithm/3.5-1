@@ -12,7 +12,7 @@ if __name__ == '__main__':
             结果记录在out.txt文件中，并将测试集中前20个节点进行可视化
     """
     # 加载数据集，本样例使用cora数据集进行测试
-
+    adj, features, labels, idx_train, idx_val, idx_test = load_data("cora")
     # 获取测试数据中前20个样本用于可视化展示
     ind = [i for i, v in enumerate(idx_test) if v]
     ind = ind[:20]
